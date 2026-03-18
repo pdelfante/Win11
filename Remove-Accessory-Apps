@@ -1,4 +1,4 @@
-(/) Powershell
+# Powershell
 # List of unwanted Windows 11 apps
 $apps = @(
     "*Microsoft.BingNews*",        # Microsoft News
