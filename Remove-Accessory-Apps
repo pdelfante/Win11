@@ -9,6 +9,7 @@ $apps = @(
     "*Microsoft.Todos*",           # Microsoft To Do
     "*MicrosoftFamily*",           # Family
     "*Microsoft.WindowsFeedbackHub*" # Feedback Hub
+    "*Microsoft.RemoteDesktop*"
 )
 
 # Remove for current user
