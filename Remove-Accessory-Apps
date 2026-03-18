@@ -1,0 +1,24 @@
+(/) Powershell
+# List of unwanted Windows 11 apps
+$apps = @(
+    "*Microsoft.BingNews*",        # Microsoft News
+    "*LinkedIn*",                  # LinkedIn
+    "*OutlookForWindows*",         # New Outlook (non-Office)
+    "*Microsoft.BingWeather*",     # Weather
+    "*MicrosoftCorporationII.QuickAssist*", # Quick Assist
+    "*Microsoft.Todos*",           # Microsoft To Do
+    "*MicrosoftFamily*",           # Family
+    "*Microsoft.WindowsFeedbackHub*" # Feedback Hub
+)
+
+# Remove for current user
+foreach ($app in $apps) {
+    Get-AppxPackage -Name $app | Remove-AppxPackage -ErrorAction SilentlyContinue
+}
+
+# Remove provisioned (preinstalled for new users)
+foreach ($app in $apps) {
+    Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like $app} | Remove-AppxProvisionedPackage -Online -ErrorAction SilentlyContinue
+}
+
+Write-Host "Done removing apps."
