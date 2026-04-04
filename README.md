@@ -1,7 +1,13 @@
-1. Copy and paste the Powershell scripts above
+Copy and paste the Powershell scripts above
 Remember to run as administrator
 
-2. Also check these websites our for more windows debloat
-https://github.com/ChrisTitusTech/winutil
+Check these websites our for more windows debloat
+
 https://ninite.com/
-https://www.revi.cc/download
+
+https://github.com/Raphire/Win11Debloat
+
+https://www.oo-software.com/en/shutup10
+
+https://chocolatey.org/install
+
