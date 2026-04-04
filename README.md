@@ -13,9 +13,8 @@ https://github.com/ChrisTitusTech/winutil
 
 https://github.com/Raphire/Win11Debloat
 
-There is heaps of good videos on youtube
-
-Stop Windows updates
+# Stop Windows updates
+Ms is changing this so check for updates
 https://www.oo-software.com/en/shutup10
 
 # Apps installer gui
@@ -26,3 +25,6 @@ https://chocolatey.org/install
 https://winhance.net/
 
 https://github.com/microsoft/winget-cli
+
+
+There is heaps of good videos on youtube
