@@ -1,4 +1,4 @@
-# Check these websites for Windows 10/11 debloating, clean up and apps installers etc
+# Websites for Windows 11 debloating, clean up and installers
 
 Copy and paste the Powershell scripts above
 Remember to run as administrator
