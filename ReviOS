@@ -1,0 +1,7 @@
+# ReviOS Windows 11 clean up https://www.revi.cc/download
+#
+# Download playbook .apbx
+https://github.com/meetrevision/playbook/releases/tag/25.10
+
+# Download installer .exe
+https://github.com/Ameliorated-LLC/trusted-uninstaller-cli/releases/tag/0.8.4
