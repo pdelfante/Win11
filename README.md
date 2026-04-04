@@ -17,6 +17,9 @@ https://github.com/Raphire/Win11Debloat
 Ms is changing this so check for updates
 https://www.oo-software.com/en/shutup10
 
+# To manage windows updates
+https://apps.microsoft.com/detail/9nkxc6zq5r94?hl=en-GB&gl=AU
+
 # Apps installer gui
 https://ninite.com/
 
