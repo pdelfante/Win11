@@ -6,6 +6,8 @@
 
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "TaskbarAl" -Type DWord -Value 0
 
+Set-ItemProperty -Path 'HKCU:\Control Panel\NotifyIconSettings\*' -Name 'IsPromoted' -Value 1
+
 Get-Process explorer | Stop-Process
 
 Get-Printer | Where-Object {$_.Name -notmatch "Microsoft|Fax|OneNote|PDF"} | Remove-Printer
