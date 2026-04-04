@@ -24,4 +24,5 @@ usoclient StartScan
 
 usoclient StartDownload
 
-usoclient StartInteractiveScan
+# optional
+# usoclient StartInteractiveScan
