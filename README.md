@@ -18,8 +18,11 @@ There is heaps of good videos on youtube
 Stop Windows updates
 https://www.oo-software.com/en/shutup10
 
-Apps installer gui
+# Apps installer gui
 https://ninite.com/
 
 https://chocolatey.org/install
 
+https://winhance.net/
+
+https://github.com/microsoft/winget-cli
