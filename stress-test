@@ -2,8 +2,27 @@
 :loop
 goto loop
 
+--
 @echo off
 :: Change '8' to the number of logical cores you want to max out
 for /L %%i in (1,1,8) do (
     start /B cmd /c "stress.bat"
 )
+
+--
+$workers = @()
+$cores = [Math]::Max(1, [Environment]::ProcessorCount / 2)
+
+Write-Host "Starting $cores CPU stress workers. Press Ctrl+C to stop."
+
+for ($i = 0; $i -lt $cores; $i++) {
+ $workers += Start-Job -ScriptBlock {
+ while ($true) {
+ 1..100000 | ForEach-Object { [Math]::Sqrt($_) } | Out-Null
+ }
+ }
+}
+
+Wait-Host "CPU stress running. Press Enter to stop"
+$workers | Stop-Job
+$workers | Remove-Job
