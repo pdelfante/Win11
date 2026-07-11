@@ -1,1 +1,9 @@
-x
+@echo off
+:loop
+goto loop
+
+@echo off
+:: Change '8' to the number of logical cores you want to max out
+for /L %%i in (1,1,8) do (
+    start /B cmd /c "stress.bat"
+)
